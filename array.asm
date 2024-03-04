@@ -1,7 +1,7 @@
 .model small
 .stack 100h
 .data
-    array db 1, 2, 3, 4, 5, 6, 7, 8 ;dichiaro l'array merdoso
+    array db 1, 2, 3, 4, 5, 6, 7, 8
 
 .code
     main:
@@ -41,9 +41,8 @@
         ;incrementa l'indice
         inc si
 
-        loop printastocazzodiloop ;verifica se ? necessario continuare la stampa 
+        loop printastocazzodiloop ;verifica se è necessario continuare la stampa 
 
-    ;termina sta minchia di programma plz
     mov ah, 4ch
     int 21h
 
