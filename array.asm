@@ -5,7 +5,7 @@
 
 .code
     main:
-        mov ax, @data ;non te lo commento pk altrimenti accoltello qualcuno
+        mov ax, @data ;non te lo commento
         mov ds, ax
 
         mov cx, 8 ; lunghezza dell'array
@@ -41,7 +41,7 @@
         ;incrementa l'indice
         inc si
 
-        loop printastocazzodiloop ;verifica se ? necessario continuare la stampa (se sei frocio si)
+        loop printastocazzodiloop ;verifica se ? necessario continuare la stampa 
 
     ;termina sta minchia di programma plz
     mov ah, 4ch
