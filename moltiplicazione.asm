@@ -6,12 +6,12 @@
         numero2 db ?
         risultato db ?
         check db 1
-        strmsg1 db "inserisci il primo schiavo: $"
-        strmsg2 db "inserisci il secondo schiavo: $"
+        strmsg1 db "inserisci il primo numero: $"
+        strmsg2 db "inserisci il secondo numero: $"
         strnewline db 13,10,"$"
     .code
         main:
-            mov ax, @data ;accoltello un marokkino
+            mov ax, @data
             mov ds, ax
             
             mov ah,09h
@@ -51,11 +51,11 @@
             jmp ciclo
         print:
             
-            mov dl, risultato ;stampa il cazzo di carlo
+            mov dl, risultato 
             add dl,'0'
             mov ah, 02h
             int 21h
             
-            mov ah, 4ch ;perfavore chiudi il programma negro
+            mov ah, 4ch 
             int 21h
         end main
