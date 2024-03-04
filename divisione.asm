@@ -5,8 +5,8 @@
     numero2 db ?
     risultato db 0
     check db 0
-    strmsg1 db "inserisci il primo nuero: $"
-    strmsg2 db "sei un negro di merda: $"
+    strmsg1 db "inserisci il primo numero: $"
+    strmsg2 db "inserisci il secondo numero: $"
     strnewline db 13,10,"$"
 
 .code
